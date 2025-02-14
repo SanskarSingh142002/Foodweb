@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Website Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#signin">Sign In</a></li>
+      <li><a href="#signup">Sign Up</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sections -->
+  <section id="home">
+    <h1>Welcome to Our Food Web</h1>
+    <p>We serve the best food in town!</p>
+    <p class="tagline">Taste the flavors of love and tradition.</p>
+    <p class="description">Our chefs use only the finest ingredients to create mouthwatering dishes that bring people together. From comfort food to gourmet meals, we have something for everyone!</p>
+</section>
+
+
+    
+  </section>
+
+  <section id="about">
+    <h1>About Us</h1>
+    <p>Learn more about our story and what we do.</p>
+
+  <div class="container">
+      <section class="mission">
+          <h2>Our Mission</h2>
+          <p>At Food Web , we strive to bring you delicious, high-quality food that satisfies your cravings and fuels your day. We believe that food is more than just nourishment; it's an experience, a connection, and a way to bring people together.</p>
+          <p>We take pride in offering a variety of flavors and ensuring that every dish caters to diverse tastes and dietary needs.</p>
+      </section>
+
+  <section id="services">
+    <h1>Our Services</h1>
+    <p>Explore the services we offer to make your experience with us even better!</p>
+  
+    <div class="service-cards-container">
+      <!-- Service Card 1 -->
+      <div class="service-card" id="service1">
+        <img src="./assets/fooddelivery.jpg" alt="Service 1" class="service-img">
+        <h3>Food Delivery</h3>
+        <p class="service-description">Fast and reliable delivery straight to your door.</p>
+        <button class="learn-more-btn" onclick="toggleDetails('service1')">Learn More</button>
+        <div class="service-details" id="service1-details">
+          <p>Our food delivery service ensures hot, fresh meals delivered to your door within the shortest time possible. We also offer express delivery options for those in a hurry.</p>
+        </div>
+      </div>
+  
+      <!-- Service Card 2 -->
+      <div class="service-card" id="service2">
+        <img src="./assets/catering.jpg" alt="Service 2" class="service-img">
+        <h3>Catering Services</h3>
+        <p class="service-description">Perfect for events, parties, and gatherings.</p>
+        <button class="learn-more-btn" onclick="toggleDetails('service2')">Learn More</button>
+        <div class="service-details" id="service2-details">
+          <p>Our catering service provides customized menus for any event, from small gatherings to large parties. We cater to various dietary preferences and offer options for delivery or in-person service.</p>
+        </div>
+      </div>
+  
+      <!-- Service Card 3 -->
+      <div class="service-card" id="service3">
+        <img src="./assets/cooking classes.jpg" alt="Service 3" class="service-img">
+        <h3>Cooking Classes</h3>
+        <p class="service-description">Learn to cook your favorite dishes with us!</p>
+        <button class="learn-more-btn" onclick="toggleDetails('service3')">Learn More</button>
+        <div class="service-details" id="service3-details">
+          <p>Join our interactive cooking classes and become a master chef. We offer a variety of cuisines and skill levels to suit your interests and experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="contact">
+    <h1>Contact Us</h1>
+    <p>Get in touch with us for more details.</p>
+
+    <div class="contact-form-container">
+        <form id="contact-form" action="#" method="POST">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your name">
+  
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="Your email">
+  
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required placeholder="Your message"></textarea>
+  
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+  </section>
+
+
+<!-- Sign In & Sign Up Section -->
+    <section id="signin">
+      <div class="auth-container">
+        <div class="form-container sign-in-container" id="signin">
+            <h2>Sign In</h2>
+            <p>Log in to access your account.</p>
+
+            <form id="signin-form">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Sign In</button>
+            </form>
+        </div>
+    </section>
+
+  <section id="signup">
+    <div class="auth-container">
+    <div class="form-container sign-up-container" id="signup">
+        <h2>Sign Up</h2>
+        <p>Create an account to enjoy our services.</p>
+        <form id="signup-form">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Food Website</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
